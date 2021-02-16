@@ -1,2 +1,2 @@
 # Raincms
-An Habbo cms for nitro client by Bill
+An Habbo cms for nitro client by Bill.
