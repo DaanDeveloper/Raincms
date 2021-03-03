@@ -20,4 +20,4 @@ $hotel["provipcost"] = 150; //The amount that provip cost to buy in diamonds
 $config["hostname"] = "root"; //default root
 $config["ip"] = "localhost"; //default localhost
 $config["password"] = ""; //database password
-$config["dbname"] = "zonehotel"; //database name
+$config["dbname"] = ""; //database name
