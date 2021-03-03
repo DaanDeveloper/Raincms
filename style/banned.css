@@ -1,0 +1,53 @@
+* {
+	z-index: 10000;
+	margin: 0;
+	padding: 0;
+}
+
+.banned-center {
+    margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    width: 500px;
+}
+
+.banned-border {
+    margin-top: 125px;
+    font-family: arial;
+    position: absolute;
+    height: 170px;
+    width: 500px;
+    background-color: darkred;
+    color: white;
+}
+
+.banned-exit {
+    margin-left: 20px;
+    margin-top: -15px;
+    padding-top: 9px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    height: 41px;
+    width: 50px;
+    border:solid black 1px;
+    background-color: white;
+    color: darkred;
+    position: absolute;
+    text-decoration: none;
+}
+
+.banned-bold {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.banned-text-bold {
+    font-weight: bold;
+}
+
+.banned-text {
+    margin-left: 20px;
+}

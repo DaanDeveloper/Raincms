@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    margin-top: -80px;
+    font-family: arial;
+    color: white;
+    width: 100%;
+    background-color: #1b1a1a;
+    height: 80px;
+}
+
+.footer-img {
+    left: calc(100% - 74px);
+    margin-top: 24px;
+    position: absolute;
+    background: rgb(22, 22, 22);
+    height: 50px;
+    width: 50px;
+}
+
+.footer-img div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    background: url(../templates/images/logo.png) no-repeat;
+    width: 22px;
+    height: 38px;
+}
+
+.footer-copyright {
+    color: rgb(66, 66, 66);
+    padding-top: 60px;
+    text-align: center;
+}
+
+.footer-termsofpolicy {
+    padding-right: 10px;
+    text-align: center;
+    margin-top: -55px;
+}
+
+.footer-termsofpolicy a {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1198px) {
+    .footer {
+        font-family: arial;
+        color: white;
+        width: 100%;
+        background-color: #1b1a1a;
+        height: 80px;
+    }
+    
+    .footer-copyright {
+        font-size: 12px;
+        padding-top: 60px;
+        text-align: center;
+    }
+    
+    .footer-termsofpolicy {
+        padding-right: 10px;
+        text-align: center;
+        margin-top: -55px;
+    }
+    
+    .footer-termsofpolicy a {
+        color: white;
+        text-decoration: none;
+    }
+
+}
+
+@media only screen and (max-width: 744px) {
+
+    .footer {
+        margin-top: -60px;
+        font-family: arial;
+        width: 100%;
+        background-color: #1b1a1a;
+        height: 60px;
+    }
+
+    .footer-img {
+        left: calc(100% - 41px);
+        margin-top: 10px;
+        position: absolute;
+        background: rgb(22, 22, 22);
+        height: 31px;
+        width: 31px;
+    }
+
+    .footer-img div {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4px;
+        background: url(../templates/images/logo.png) no-repeat;
+        background-size: 110px;
+        width: 13px;
+        height: 23px;
+    }
+
+    .footer-copyright {
+        font-size: 8px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .footer-termsofpolicy {
+        font-size: 8px;
+        padding-right: 10px;
+        text-align: center;
+        margin-top: -35px;
+    }
+
+    .footer-termsofpolicy a {
+        font-size: 8px;
+        text-decoration: none;
+    }
+
+}
