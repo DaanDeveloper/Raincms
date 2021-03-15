@@ -24,13 +24,13 @@ body, html {
     top: 50px;
     z-index: 1000;
     position: absolute;
-    background-image: url(../templates/images/logo.png);
+    background: no-repeat url(../templates/images/logo.png);
     width: 182px;
     height: 38px;
 }
 
 .register-online {
-    margin-left: 200px;
+    margin-left: 165px;
     min-width: 150px;
     width: auto;
     background: #313131;
@@ -307,7 +307,7 @@ body, html {
         top: 25px;
         z-index: 1000;
         position: absolute;
-        background-image: url(../templates/images/logo.png);
+        background: no-repeat url(../templates/images/logo.png);
         width: 182px;
         height: 38px;
     }
@@ -548,11 +548,10 @@ body, html {
         top: 25px;
         z-index: 1000;
         position: absolute;
-        background-image: url(../templates/images/logo.png);
+        background: no-repeat url(../templates/images/logo.png);
         width: 182px;
         height: 38px;
         background-size: 70px;
-        background-repeat: no-repeat;
     }
     
     .register-online {

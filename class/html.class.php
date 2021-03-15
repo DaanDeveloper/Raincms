@@ -3,12 +3,27 @@
 class html {
 
     static public function news($newsInfo) {
-        require "config.php";
-		require "include/cnt.inc.php";
+        require __DIR__ ."/../config.php";
+		require __DIR__ ."/../include/cnt.inc.php";
         $stmt = $db->prepare("SELECT * FROM cms_news ORDER BY id DESC LIMIT 1");
         $stmt->execute();
         while($row = $stmt->fetch()) {
             return $row[$newsInfo];
+        }
+    }
+
+    static public function hk($selector, $data2, $data3) {
+        require __DIR__ ."/../config.php";
+		require __DIR__ ."/../include/cnt.inc.php";
+        switch($selector) {
+            case "chatlog":
+            $stmt = $db->prepare("SELECT * FROM chatlogs_room ORDER BY timestamp DESC LIMIT 600");
+            $stmt->execute();
+            while($row = $stmt->fetch()) {
+                $time = $row['timestamp'];
+                $time = date("d/m/Y H:i",$time);
+                echo htmlspecialchars("Room: " . $row['room_id'] . " Van: " . $row['user_from_id'] . " Naar: " . $row['user_to_id'] . " Bericht: " . $row['message'] . " Tijd: " . $time, ENT_QUOTES, 'UTF-8')."<br>";
+            };break;
         }
     }
 
@@ -22,8 +37,8 @@ class html {
             case "support": $teamNumber = 4;break;
             case "expert": $teamNumber = 3;break;
         }
-        require "config.php";
-		require "include/cnt.inc.php";
+        require __DIR__ ."/../config.php";
+		require __DIR__ ."/../include/cnt.inc.php";
         $stmt = $db->prepare("SELECT * FROM users WHERE rank=:rank");
         $stmt->execute([":rank" => $teamNumber]);
         $count = $stmt->rowcount();
@@ -60,12 +75,12 @@ class html {
 public static function leaderBoard($data) {
     switch($data) {
         case "bel-credits": $currency = "101"; $currencyShort = "bel-credits";break;
-        case "diamonds": $currency = "0"; $currencyShort = "diamanten";break;
+        case "diamonds": $currency = "5"; $currencyShort = "diamanten";break;
         case "onlineTime": $onlineTime = "0";break;
     }   
         if (isset($currency)) {
-            require "config.php";
-            require "include/cnt.inc.php";
+            require __DIR__ ."/../config.php";
+		    require __DIR__ ."/../include/cnt.inc.php";
             $stmt = $db->prepare("SELECT * FROM users_currency WHERE type = :currency ORDER BY amount DESC LIMIT 5");
             $stmt->execute([":currency" => $currency]);
             while($row = $stmt->fetch()) {
@@ -81,8 +96,8 @@ public static function leaderBoard($data) {
             }
         }
         else {
-            require "config.php";
-            require "include/cnt.inc.php";
+            require __DIR__ ."/../config.php";
+		    require __DIR__ ."/../include/cnt.inc.php";
             $stmt = $db->prepare("SELECT * FROM users_settings ORDER BY online_time DESC LIMIT 5");
             $stmt->execute();
             while($row = $stmt->fetch()) {

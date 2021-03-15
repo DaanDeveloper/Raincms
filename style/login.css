@@ -32,12 +32,12 @@ body, html {
     z-index: 1000;
     position: absolute;
     background: no-repeat url(../templates/images/logo.png);
-    width: 300px;
+    width: 182px;
     height: 38px;
 }
 
 .login-online {
-    margin-left: 160px;
+    margin-left: 165px;
     min-width: 150px;
     width: auto;
     background: #313131;
@@ -49,7 +49,7 @@ body, html {
     position: absolute;
 }
 
-.login-online:before {
+.login-online::before {
     content: "";
     width: 0px;
     height: 0px;
@@ -59,7 +59,7 @@ body, html {
     border-top: 10px solid #313131 ;
     border-bottom: 10px solid transparent;
     left: -19px;
-    top: 6px;    
+    top: 6px;      
 }
 
 .login-form-text {
@@ -257,7 +257,7 @@ body, html {
         top: 25px;
         z-index: 1000;
         position: absolute;
-        background-image: url(../templates/images/logo.png);
+        background: no-repeat url(../templates/images/logo.png);
         width: 182px;
         height: 38px;
     }
@@ -469,7 +469,7 @@ body, html {
         top: 25px;
         z-index: 1000;
         position: absolute;
-        background-image: url(../templates/images/logo.png);
+        background: no-repeat url(../templates/images/logo.png);
         width: 182px;
         height: 38px;
         background-size: 70px;

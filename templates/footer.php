@@ -1,7 +1,3 @@
-<head>
-    <link rel="stylesheet" href="style/footer.css">
-</head>
-
 <div class="footer">
     <div class="footer-img"><div></div></div>
     <div class="footer-copyright">© Copyright <?=$hotel["hotelurl"], " ",date("Y")?>. All rights reserverd. Made by Daan.</div>

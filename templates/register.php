@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style/register.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/fontawesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <title>Registreren - <?=$hotel["hotelname"]?></title>

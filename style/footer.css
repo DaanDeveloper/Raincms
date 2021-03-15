@@ -4,6 +4,8 @@
 }
 
 .footer {
+    position: relative;
+    z-index: 100;
     margin-top: -80px;
     font-family: arial;
     color: white;

@@ -3,6 +3,8 @@
     <link rel='shortcut icon' type='image/x-icon' href='../templates/images/favicon.ico'>
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/news.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/fontawesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nieuws - <?=$hotel["hotelname"]?></title>
 </head>

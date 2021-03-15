@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+}
+
+#login-container {
+    min-height: 100%;
+}
+
+#login-main {
+    overflow: auto;
+   padding-bottom: 80px;
+}
+
+.login-footer {
+    height: 80px;
+    background-color: black;
+    margin-top: -80px;
+    width: 100%;
+}

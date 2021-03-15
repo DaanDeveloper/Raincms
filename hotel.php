@@ -13,11 +13,11 @@
     $stmt = $db->prepare("UPDATE users SET last_online=:last_online WHERE id=:id");
     $stmt->execute([':last_online' => strtotime('now'), ':id' =>  $_SESSION["id"]]);
 ?>
-
+<link rel='shortcut icon' type='image/x-icon' href='../templates/images/favicon.ico'>
 <title>Hotel - <?=$hotel["hotelname"]?></title>
 <link rel="stylesheet" href="../style/nav-client.css">
 <body>
-<div class="nav-client-logo">R</div>
+<div class="nav-client-logo">H</div>
 <a href="../hotel" class="nav-client-refresh">&#x21bb;</a>
 <button onclick="openFullscreen();" class="nav-client-fullscreen">⤢</button>
 <iframe src="/nitro-client/dist/index.html?sso=<?=user::userInfo("auth_ticket")?>" height="100%" width="100%"  style="border:0px;"></iframe>
